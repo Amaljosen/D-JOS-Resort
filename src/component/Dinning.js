@@ -25,7 +25,7 @@ export default function Dinning() {
 
     <div className='lg:items-center lg:flex pb-16 lg:w-full lg:justify-around'>
       <div className='lg:w-1/3'>
-      <img src={Caribbean} alt="img" className='object-cover w-full h-full '/>
+      <img src={Caribbean} alt="img" loading="lazy" className='object-cover w-full h-full '/>
     </div>
 
 
@@ -55,7 +55,7 @@ export default function Dinning() {
 
     <div className='lg:items-center lg:flex pb-16 lg:w-full lg:flex-row-reverse lg:justify-around'>
       <div className='lg:w-1/3'>
-      <video src={restaurant} autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={restaurant} loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div className='text-left lg:w-1/3  lg:overflow-scroll lg:scrollbar-hide lg:h-2/3'>
     <h1 className='text-2xl lg:text-5xl lg:font-normal font-light pt-3 lg:py-5'>The Canal Club</h1>
@@ -98,7 +98,7 @@ export default function Dinning() {
     <div className='lg:flex w-full lg:w-full lg:justify-around'>
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3 pb-16'>
       <div >
-      <img src={denizen} alt="img" className='object-cover w-full h-full '/>
+      <img src={denizen} alt="img" loading="lazy" className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>The Denizen Club</h1>
@@ -113,7 +113,7 @@ export default function Dinning() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div>
-      <img src={poolSide} alt="img" className='object-cover w-full h-full '/>
+      <img src={poolSide} loading="lazy" alt="img" className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>The Canal Club Poolside</h1>

@@ -10,7 +10,7 @@ export default function Event() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3' >
       <div  className='p-10'>
-      <video src={event} autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={event} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Meetings & Events</h1>
@@ -23,7 +23,7 @@ export default function Event() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div  className='p-10'>
-      <video src={wedding} autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={wedding} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Weddings</h1>

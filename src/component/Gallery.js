@@ -28,7 +28,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3 pb-16'>
       <div >
-      <video src={pool} autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={pool} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
        
     <div>
@@ -42,7 +42,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div>
-      <video src={lagoon} autoPlay loop muted className='object-cover w-full h-full'/>
+      <video src={lagoon} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full'/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Lagoon View Guestroom</h1>
@@ -64,7 +64,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3 pb-16'>
       <div >
-      <video src={courtyard} autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={courtyard} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Courtyard Guestroom</h1>
@@ -77,7 +77,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div>
-      <video src={suite} autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={suite} loading="lazy" preload="metadata" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Suites</h1>
@@ -106,7 +106,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex pb-16 lg:w-full lg:justify-around'>
       <div className='lg:w-1/3'>
-      <img src={Access} alt='' className='object-cover w-full h-full '/>
+      <img src={Access} loading="lazy" alt='' className='object-cover w-full h-full '/>
     </div>
     <div className='text-left lg:w-1/3'>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light px-7 py-5'>Accessible Accommodations</h1>

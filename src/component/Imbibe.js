@@ -8,7 +8,7 @@ export default function Imbibe() {
     <div style={{fontFamily:'jungle',backgroundImage:`url(${bg})`}} className='text-center text-white lg:flex lg:flex-row-reverse lg:justify-around lg:text-left w-screen tracking-widest lg:py-36 py-20 lg:items-center mb-14'>
       <h1 className='text-3xl lg:text-6xl lg:font-normal font-light pb-5 lg:pb-10 lg:hidden'>Imbibe</h1>
       <div className='px-10 lg:p-0 lg:w-6/12'>
-      <video src={video} autoPlay loop muted className='object-cover w-full h-full border-white border-solid border' />
+      <video src={video} loading="lazy" type="video/mp4" preload="metadata" autoPlay loop muted className='object-cover w-full h-full border-white border-solid border' />
       </div>
       <div className='lg:py-10 p-8 lg:px-0 lg:w-4/12'>
         <h1 className='text-2xl lg:text-6xl lg:font-normal font-light pb-5 lg:pb-10 hidden lg:block'>Imbibe</h1>

@@ -16,7 +16,7 @@ export default function Stay() {
       <p className='px-7 font-light lg:text-xl'>A sanctuary set against Scottsdale’s historic downtown</p>
       <div className='lg:flex lg:items-center lg:w-screen lg:justify-around'>
         <div  className='p-10 lg:w-2/5'>
-        <img src={value} alt="img" className='object-cover w-full h-full '/>
+        <img src={value} loading="lazy" alt="img" className='object-cover w-full h-full '/>
         </div>
         <div className='text-xl lg:text-4xl lg:text-left lg:mt-5'>
             <span className='font-light hover:text-orange-600 cursor-pointer transition-all duration-300' onClick={()=>setvalue(pool)}>Pool View Room</span>
