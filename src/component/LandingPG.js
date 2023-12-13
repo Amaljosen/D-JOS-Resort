@@ -1,9 +1,10 @@
 import React, { useState,useEffect } from 'react'
 import BGimg from '../assets/bg.webp'
-import vid from '../assets/intro.mp4'
+import {Assets}from './ImgLinks'
 import { Link } from 'react-router-dom'
 
 export default function LandingPG() {
+
 
   const [content,setContent]=useState('text-white text-center lg:text-left p-5 mt-5 lg:absolute lg:top-72  -left-72')
   useEffect(function(){
@@ -13,7 +14,7 @@ export default function LandingPG() {
 
   return (
     <div className='tracking-widest text-white p-10 w-screen'style={{backgroundImage:`url(${BGimg})`,fontFamily:'jungle'}}>
-       <div className='w-full pt-16 lg:pt-40 lg:pr-40 lg:pl-40 lg:pb-32'><video src={vid} loading="lazy" type="video/mp4" preload="metadata" autoPlay loop muted className='w-full object-cover border-white border-solid border'/></div>
+       <div className='w-full pt-16 lg:pt-40 lg:pr-40 lg:pl-40 lg:pb-32'><video src={Assets.intro} loading="lazy" type="video/mp4" preload="metadata" autoPlay loop muted className='w-full object-cover border-white border-solid border'/></div>
        <div className={content}>
         <span className='font-normal text-3xl lg:text-7xl tracking-widest pr-2'>Find</span>
         <span className='font-normal text-3xl lg:text-7xl tracking-widest lg:block'>Yourself</span>

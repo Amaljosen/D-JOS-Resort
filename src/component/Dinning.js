@@ -1,10 +1,12 @@
 import React,{useEffect} from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
-import restaurant from '../assets/restaurant.mp4'
-import poolSide from '../assets/poolSide.png'
-import denizen from '../assets/denizen.png'
-import Caribbean from '../assets/Caribbean.png'
+// import restaurant from '../assets/restaurant.mp4'
+// import poolSide from '../assets/poolSide.png'
+// import denizen from '../assets/denizen.png'
+// import Caribbean from '../assets/Caribbean.png'
+import {Assets} from './ImgLinks'
+
 
 
 export default function Dinning() {
@@ -13,6 +15,7 @@ export default function Dinning() {
     window.scroll(0,0)
   },[])
 
+  
   return (
     <div className='text-lime-900 tracking-widest w-screen 'style={{fontFamily:'jungle'}}>
      <Nav/>
@@ -25,7 +28,7 @@ export default function Dinning() {
 
     <div className='lg:items-center lg:flex pb-16 lg:w-full lg:justify-around'>
       <div className='lg:w-1/3'>
-      <img src={Caribbean} alt="img" loading="lazy" className='object-cover w-full h-full '/>
+      <img src={Assets.Caribbean} alt="img" loading="lazy" className='object-cover w-full h-full '/>
     </div>
 
 
@@ -55,7 +58,7 @@ export default function Dinning() {
 
     <div className='lg:items-center lg:flex pb-16 lg:w-full lg:flex-row-reverse lg:justify-around'>
       <div className='lg:w-1/3'>
-      <video src={restaurant} loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={Assets.restaurant} loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div className='text-left lg:w-1/3  lg:overflow-scroll lg:scrollbar-hide lg:h-2/3'>
     <h1 className='text-2xl lg:text-5xl lg:font-normal font-light pt-3 lg:py-5'>The Canal Club</h1>
@@ -98,7 +101,7 @@ export default function Dinning() {
     <div className='lg:flex w-full lg:w-full lg:justify-around'>
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3 pb-16'>
       <div >
-      <img src={denizen} alt="img" loading="lazy" className='object-cover w-full h-full '/>
+      <img src={Assets.denizen} alt="img" loading="lazy" className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>The Denizen Club</h1>
@@ -113,7 +116,7 @@ export default function Dinning() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div>
-      <img src={poolSide} loading="lazy" alt="img" className='object-cover w-full h-full '/>
+      <img src={Assets.poolSide} loading="lazy" alt="img" className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>The Canal Club Poolside</h1>

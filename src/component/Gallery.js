@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import Nav from '../component/Nav.js'
 import Footer from './Footer.js'
-import pool from '../assets/pool.mp4'
-import lagoon from '../assets/lagoon.mp4'
-import courtyard from '../assets/courtyard.mp4'
-import suite from '../assets/suite.mp4'
-import Access from '../assets/Access.png'
+// import pool from '../assets/pool.mp4'
+// import lagoon from '../assets/lagoon.mp4'
+// import courtyard from '../assets/courtyard.mp4'
+// import suite from '../assets/suite.mp4'
+// import Access from '../assets/Access.png'
+import { Assets } from './ImgLinks.js'
 export default function Gallery() {
 
   useEffect(function(){
@@ -17,7 +18,7 @@ export default function Gallery() {
     <Nav/>
  {/******************************************** ROOM ****************************************************** */}
 
-    <div className='mt-32 text-center p-10'>
+    <div className='mt-24 text-center p-10'>
     <p className='font-light lg:text-xl '>Rooms</p>
     <h1 className='text-2xl lg:text-6xl lg:font-normal font-light p-5'>Stay with us</h1>
     <p className='font-light lg:text-xl pb-10'>Warm wooden furniture and old world bronze combine to create an inviting luxury experience in vibrant Sonoran style.</p>
@@ -28,7 +29,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3 pb-16'>
       <div >
-      <video src={pool} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={Assets.pool} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
        
     <div>
@@ -42,7 +43,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div>
-      <video src={lagoon} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full'/>
+      <video src={Assets.lagoon} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full'/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Lagoon View Guestroom</h1>
@@ -64,7 +65,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3 pb-16'>
       <div >
-      <video src={courtyard} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={Assets.courtyard} preload="metadata" loading="lazy" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Courtyard Guestroom</h1>
@@ -77,7 +78,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex lg:flex-col lg:w-1/3'>
       <div>
-      <video src={suite} loading="lazy" preload="metadata" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
+      <video src={Assets.suite} loading="lazy" preload="metadata" type="video/mp4" autoPlay loop muted className='object-cover w-full h-full '/>
     </div>
     <div>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light p-5'>Suites</h1>
@@ -106,7 +107,7 @@ export default function Gallery() {
 
     <div className='lg:items-center lg:flex pb-16 lg:w-full lg:justify-around'>
       <div className='lg:w-1/3'>
-      <img src={Access} loading="lazy" alt='' className='object-cover w-full h-full '/>
+      <img src={Assets.Access} loading="lazy" alt='' className='object-cover w-full h-full '/>
     </div>
     <div className='text-left lg:w-1/3'>
     <h1 className='text-2xl lg:text-4xl lg:font-normal font-light px-7 py-5'>Accessible Accommodations</h1>
